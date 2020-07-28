@@ -139,6 +139,11 @@ return [
                 'path'            => '/contacts',
                 'controller'      => 'MauticLeadBundle:Api\LeadApi',
             ],
+            'mautic_api_importcsv' => [
+                'path'       => '/contacts/importCsv',
+                'controller' => 'MauticLeadBundle:Api\LeadApi:importCsv',
+                'method'     => 'POST',
+            ],
             'mautic_api_dncaddcontact' => [
                 'path'       => '/contacts/{id}/dnc/{channel}/add',
                 'controller' => 'MauticLeadBundle:Api\LeadApi:addDnc',
